@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.white_color {
+  font-weight: 700;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-image: url(img/Rectangle\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1024px;
+}
+
+.header {
+  padding-top: 217px;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  max-width: 788px;
+  margin-bottom: 32px;
+}
+.header__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 481px;
+  margin-bottom: 44px;
+}
+.header__link {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #9C0332;
+  border-radius: 30px;
+  padding: 13px 74px;
+  width: 234px;
+  height: 48px;
+  transition: 0.3s;
+}
+.header__link:hover {
+  background-color: #EB443F;
+}
+.header__link:active {
+  transform: scale(1.02);
+}
+
+.main {
+  background-color: #000915;
+}
+
+.main__list_of_games {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.list_of_games {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+
+.game {
+  grid-column: span 4;
+  max-height: 300px;
+  transition: 0.3s;
+}
+.game__content {
+  position: relative;
+}
+.game__img {
+  width: 100%;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.game__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  cursor: pointer;
+}
+.game:hover {
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  transform: translateY(-20px);
+}
+.game:active {
+  transform: scale(1.02);
+}/*# sourceMappingURL=style.css.map */
