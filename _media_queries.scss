@@ -1,0 +1,24 @@
+@media (min-width: 1024px){
+    .header{
+        &__link{
+            transition: .3s;
+            &:hover{
+                background-color: #EB443F;
+            }
+            &:active{
+                transform: scale(1.02);
+            }
+        }
+    }
+    .game{
+        transition: .3s;
+        &:hover{
+            border: 3px solid #44D2FF; 
+            border-radius: 16px;
+            transform: translateY(-20px);
+         }
+         &:active{
+             transform: scale(1.02);
+         }
+    }
+}
