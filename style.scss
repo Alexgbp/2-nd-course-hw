@@ -95,6 +95,51 @@ gap: 32px;
     }
 }
 
+.about_game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__right{
+        width: 485px;
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        max-width: 584px;
+    }
+    &__button{
+        border: none;
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background-color: #9C0332;
+        border-radius: 30px;
+        padding: 13px 74px;
+        width: 234px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
 
 @import "mobile";
-@import "media_queries";
+@import "effects_for_descktop";

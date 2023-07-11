@@ -11,6 +11,12 @@
         height: 735px;
     }
     .header{
+        &__link{
+            transition: 0.3s;
+            &:active{
+                transform: scale(1.02);
+            }
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,6 +40,40 @@
     }
     .game{
         width: 343px;
+        transition: all 0.3s ease-in-out;
+         &:active{
+             transform: scale(1.02);
+         }
+    }
+
+    .about_game{
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        &__left{
+            align-items: center;
+        }
+        &__right{
+            width: 344px;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            width: 343px;
+        }
+    }
+    .about_game{
+        &__button{
+            transition: all 0.3s ease-in-out;
+            &:active{
+                transform: scale(1.02); 
+            }
+        }
     }
 }
 @media (max-width: 374px){
