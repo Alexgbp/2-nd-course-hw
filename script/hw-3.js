@@ -12,7 +12,7 @@ if(userAnswer === password){
 
 // // Задание 2
 
-let c = Number("Введите одно из этих чисел: 0, 10, −3, 2");
+let c = Number(prompt("Введите одно из этих чисел: 0, 10, −3, 2"));
 
 if(c > 0 && c < 10){
     console.log("Верно");
