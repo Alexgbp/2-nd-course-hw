@@ -15,15 +15,15 @@
     <header class="header">
         <h1 class="header__title">Добро пожаловать на мой сайт !</h1>
         <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="white_color">поехали </span> и <span class="white_color">приступай</span></p>
-        <a class="header__link" href="#">Поехали!</a>
+        <a class="header__link" href="#link">Поехали!</a>
     </header>
  </div>
  <div class="main center">
-    <section class="list_of_games main__list_of_games">
+    <section id="link" class="list_of_games main__list_of_games">
         <div class="game">
             <div class="game__content">
                 <a href="#"><img class="game__img" src="img/Rectangle 6.jpg" alt="picture"></a>
-                <p class="game__text">Игра 1</p>
+                <p class="game__text">Игра 1</з>
             </div>
         </div>
         <div class="game">
@@ -38,9 +38,17 @@
                 <p class="game__text">Игра 3</p>
             </div>
         </div>
-    </section>
-    
+    </section>  
+    <section class="about_game main__about_game">
+        <div class="about_game__left">
+            <h2 class="about_game__title">Времена года!</h2>
+            <p class="about_game__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <button class="about_game__button">Играть!</button>
+        </div>
+        <div class="about_game__right">
+            <img class="about_game__img" src="img/undraw_video_game_night.svg" alt="Game_picture">
+        </div>
+    </section>  
  </div>
-    <script src="script/hw-2.js"></script>
 </body>
 </html>

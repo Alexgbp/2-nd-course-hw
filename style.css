@@ -105,6 +105,53 @@ body {
   cursor: pointer;
 }
 
+.about_game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_game__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about_game__right {
+  width: 485px;
+}
+.about_game__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about_game__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.about_game__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  max-width: 584px;
+}
+.about_game__button {
+  border: none;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #9C0332;
+  border-radius: 30px;
+  padding: 13px 74px;
+  width: 234px;
+  height: 48px;
+  cursor: pointer;
+}
+
 @media (max-width: 425px) {
   .center {
     padding-left: 16px;
@@ -122,6 +169,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 238px;
+  }
+  .header__link {
+    transition: 0.3s;
+  }
+  .header__link:active {
+    transform: scale(1.02);
   }
   .header__title {
     font-size: 32px;
@@ -141,6 +194,37 @@ body {
   }
   .game {
     width: 343px;
+    transition: all 0.3s ease-in-out;
+  }
+  .game:active {
+    transform: scale(1.02);
+  }
+  .about_game {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+  .about_game__left {
+    align-items: center;
+  }
+  .about_game__right {
+    width: 344px;
+  }
+  .about_game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .about_game__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .about_game__button {
+    transition: all 0.3s ease-in-out;
+  }
+  .about_game__button:active {
+    transform: scale(1.02);
   }
 }
 @media (max-width: 374px) {
@@ -159,7 +243,7 @@ body {
     transform: scale(1.02);
   }
   .game {
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
   }
   .game:hover {
     border: 3px solid #44D2FF;
@@ -167,6 +251,15 @@ body {
     transform: translateY(-20px);
   }
   .game:active {
+    transform: scale(1.02);
+  }
+  .about_game__button {
+    transition: all 0.3s ease-in-out;
+  }
+  .about_game__button:hover {
+    background-color: #EB443F;
+  }
+  .about_game__button:active {
     transform: scale(1.02);
   }
 }/*# sourceMappingURL=style.css.map */

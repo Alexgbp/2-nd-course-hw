@@ -1,7 +1,7 @@
 @media (min-width: 1024px){
     .header{
         &__link{
-            transition: .3s;
+            transition: 0.3s;
             &:hover{
                 background-color: #EB443F;
             }
@@ -11,7 +11,7 @@
         }
     }
     .game{
-        transition: .3s;
+        transition: all 0.3s ease-in-out;
         &:hover{
             border: 3px solid #44D2FF; 
             border-radius: 16px;
@@ -20,5 +20,16 @@
          &:active{
              transform: scale(1.02);
          }
+    }
+    .about_game{
+        &__button{
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: #EB443F;
+            }
+            &:active{
+                transform: scale(1.02); 
+            }
+        }
     }
 }
