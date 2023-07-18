@@ -105,6 +105,14 @@ body {
   cursor: pointer;
 }
 
+.main__about_game {
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+.main__about_game_reverse {
+  flex-direction: row-reverse;
+}
+
 .about_game {
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +207,10 @@ body {
   .game:active {
     transform: scale(1.02);
   }
+  .main__about_game {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
   .about_game {
     flex-direction: column;
     align-items: center;
@@ -228,7 +240,19 @@ body {
   }
 }
 @media (max-width: 374px) {
+  .header__text {
+    width: 288px;
+  }
   .game {
+    width: 288px;
+  }
+  .about_game__left {
+    width: 288px;
+  }
+  .about_game__text {
+    width: 283px;
+  }
+  .about_game__right {
     width: 288px;
   }
 }
