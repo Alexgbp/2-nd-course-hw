@@ -130,37 +130,3 @@ console.log(circle1.getPerimeter());
 
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
-
-
-
-
-
-
-
-// Задание 8
-
-// Задание для связи сайта с игрой находится в файле script.js
-
-// Месяцы
-
-let getMonths  = (num) => {
-
-    if(num === 0 || num >= 13){
-        return "Такого месяца нет";
-    }else if( num === 12 || num <= 2){
-        return "Зима";
-    }else if( num >= 3 && num <= 5 ){
-        return "Весна";
-    }else if( num >= 6 && num <= 8 ){
-        return "Лето";
-    }else{
-        return "Осень";
-    }
-}
-
-console.log(getMonths(3));
-
-
-
-
-
