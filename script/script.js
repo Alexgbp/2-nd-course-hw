@@ -2,7 +2,7 @@
 //Задание 8
 
 let getMonths  = () => {
-    let num = prompt("Введите число от 1 до 12");
+    let num = +prompt("Введите число от 1 до 12");
 
     if(num == 0 || num >= 13){
         console.log("Такого месяца нет");
