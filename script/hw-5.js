@@ -1,132 +1,132 @@
-// Задание 1
+// // Задание 1
 
-let minNumber = () => {
+// let minNumber = () => {
 
-    let firstNumber = Number(prompt("Введите первое число"));
-    let secondNumber = Number(prompt("Введите второе число"));
+//     let firstNumber = Number(prompt("Введите первое число"));
+//     let secondNumber = Number(prompt("Введите второе число"));
 
-    if(!firstNumber || !secondNumber){
-        console.log("Вы ввели не числовые значения или пустую строку");
-    }else if(firstNumber < secondNumber){
-        return firstNumber;
-    }else{
-        return secondNumber;
-    }
-}
+//     if(!firstNumber || !secondNumber){
+//         console.log("Вы ввели не числовые значения или пустую строку");
+//     }else if(firstNumber < secondNumber){
+//         return firstNumber;
+//     }else{
+//         return secondNumber;
+//     }
+// }
 
-console.log(`Наименьшее число ${minNumber()}`);
-
-
-// Задание 2
-
-let evenAndOdd = () => {
-
-    let number = Number(prompt("Введите число для проверки на нечтность/нечетность"));
-
-    if(number % 2 === 0){
-        return "Число четное";
-    }else{
-        return "Число не четное";
-    }
-}
-
-console.log(evenAndOdd());
+// console.log(`Наименьшее число ${minNumber()}`);
 
 
-// Задание 3
+// // Задание 2
 
-let getRectangle = (number) => {
+// let evenAndOdd = () => {
 
-    console.log(number ** 2);
-}
+//     let number = Number(prompt("Введите число для проверки на нечтность/нечетность"));
 
-getRectangle(2);
+//     if(number % 2 === 0){
+//         return "Число четное";
+//     }else{
+//         return "Число не четное";
+//     }
+// }
 
-let getAnotherRectangle = (number) => {
-
-    return number ** 2;
-}
-
-console.log(getAnotherRectangle(8));
-
-
-// Задание 4
-
-let howOld = () =>{
-
-    let userAnswwer = prompt("Сколько вам лет");
-
-    if(userAnswwer < 0){
-        alert("Вы ввели неправильное значение");
-    }else if(userAnswwer <= 12){
-        alert("Привет, друг!");
-    }else{
-        alert("Добро пожаловать!");
-    }
-}
-
-howOld();
+// console.log(evenAndOdd());
 
 
-// // // Задание 5
+// // Задание 3
 
-let mult = (a, b) => {
+// let getRectangle = (number) => {
 
-    if(isNaN(a) || isNaN(b)){
-        return "Одно или оба значения не являются числом";
-    }else{
-        return a * b;
-    }
-}
+//     console.log(number ** 2);
+// }
 
-console.log(mult(2, 5));
+// getRectangle(2);
 
+// let getAnotherRectangle = (number) => {
 
-// // Задание 6
+//     return number ** 2;
+// }
 
-
-let askNumber = () => {
-
-    let askUser = Number(prompt("Введите число от 0 до 10"));
-
-    if( askUser > 10){
-        return "Нужно ввести число от 0 до 10";
-    }else if(isNaN(askUser)){
-        return "Переданный параметр не является числом";
-    }else{
-        let result = askUser ** 3;
-        return `${askUser} в кубе равняется ${result}`;
-    }
-}
-
-console.log(askNumber());
+// console.log(getAnotherRectangle(8));
 
 
-// Задание 7
+// // Задание 4
+
+// let howOld = () =>{
+
+//     let userAnswwer = prompt("Сколько вам лет");
+
+//     if(userAnswwer < 0){
+//         alert("Вы ввели неправильное значение");
+//     }else if(userAnswwer <= 12){
+//         alert("Привет, друг!");
+//     }else{
+//         alert("Добро пожаловать!");
+//     }
+// }
+
+// howOld();
 
 
-function Area(){
-    return  Math.PI * this.radius ** 2;
-}
+// // // // Задание 5
 
-function Perimeter(){
-    return   2 * Math.PI * this.radius;
-}
+// let mult = (a, b) => {
 
-let circle1 = {
-     radius: 10,
-     getArea: Area,
-     getPerimeter: Perimeter,
-}
+//     if(isNaN(a) || isNaN(b)){
+//         return "Одно или оба значения не являются числом";
+//     }else{
+//         return a * b;
+//     }
+// }
 
-let circle2 = {
-    radius: 20,
-    getArea: Area,
-    getPerimeter: Perimeter,
-}
+// console.log(mult(2, 5));
 
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
 
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+// // // Задание 6
+
+
+// let askNumber = () => {
+
+//     let askUser = Number(prompt("Введите число от 0 до 10"));
+
+//     if( askUser > 10){
+//         return "Нужно ввести число от 0 до 10";
+//     }else if(isNaN(askUser)){
+//         return "Переданный параметр не является числом";
+//     }else{
+//         let result = askUser ** 3;
+//         return `${askUser} в кубе равняется ${result}`;
+//     }
+// }
+
+// console.log(askNumber());
+
+
+// // Задание 7
+
+
+// function Area(){
+//     return  Math.PI * this.radius ** 2;
+// }
+
+// function Perimeter(){
+//     return   2 * Math.PI * this.radius;
+// }
+
+// let circle1 = {
+//      radius: 10,
+//      getArea: Area,
+//      getPerimeter: Perimeter,
+// }
+
+// let circle2 = {
+//     radius: 20,
+//     getArea: Area,
+//     getPerimeter: Perimeter,
+// }
+
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimeter());
+
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimeter());
