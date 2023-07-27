@@ -13,6 +13,7 @@ a{
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #000915;
 }
 .white_color{
     font-weight: 700;
@@ -59,9 +60,6 @@ body{
         width: 234px;
         height: 48px;
     }
-}
-.main{
-    background-color: #000915;
 }
 .main__list_of_games{
     padding-top: 128px;
@@ -148,4 +146,5 @@ gap: 32px;
 }
 
 @import "mobile";
+@import "mobile1";
 @import "effects_for_descktop";

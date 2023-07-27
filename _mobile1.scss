@@ -1,0 +1,13 @@
+@media (min-width: 426px) and (max-width: 768px){
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .top{
+        background-image: url(img/background_img_mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 866px;
+    }
+}
